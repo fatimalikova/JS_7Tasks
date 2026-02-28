@@ -51,13 +51,45 @@
 //falsy values=> false,0,"",null,undefined,NaN
 //truthy values=> true,1," ",[],{},function(){}}
 
-let numbers =["helloo",12,true,null,undefined,NaN,[],{name:"Fatima"}];
-// for(let i=0;i<numbers.length;i++){
-//     console.log(numbers[i]);
+// let numbers =["helloo",12,true,null,undefined,NaN,[],{name:"Fatima"}];
+// // for(let i=0;i<numbers.length;i++){
+// //     console.log(numbers[i]);
+// // }
+
+// numbers.push("new value");//sonuna elave edir
+// numbers.unshift("first value");//basa elave edir
+// numbers.pop();//sonuncunu silir
+// numbers.shift();//basindaki element silir
+// console.log(numbers);
+
+// try{
+//     const num =12;
+//     num=18;
+// }
+// catch(error){
+//     console.log( error.message);
+// }
+// finally{
+//     console.log("This will always be executed.");
 // }
 
-numbers.push("new value");//sonuna elave edir
-numbers.unshift("first value");//basa elave edir
-numbers.pop();//sonuncunu silir
-numbers.shift();//basindaki element silir
-console.log(numbers);
+// throw new Error("This is an error message!");
+
+//function yaratmaq yollari=> function declaration, function expression, arrow function
+// function declaration
+function Print(message) {
+    console.log("Hello " + message);
+}
+Print("Fatima!");
+
+// function expression
+const Print2 = function (message) {
+    console.log("Hello " + message);
+}
+Print2("Fatima!");
+
+//arrow function
+const Print3 = (message) => {
+    console.log("Hello " + message);
+}
+Print3("Fatima!");
